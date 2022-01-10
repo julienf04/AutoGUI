@@ -4,6 +4,9 @@ using AutoGUI.SendInput.MouseInput;
 
 namespace AutoGUI
 {
+    /// <summary>
+    /// Manages your cursor
+    /// </summary>
     public static class Cursor
     {
         [DllImport("User32")] private static extern bool SetCursorPos(int X, int Y);

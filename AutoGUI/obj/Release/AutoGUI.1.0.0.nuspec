@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AutoGUI</id>
+    <version>1.0.0</version>
+    <authors>AutoGUI</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Release\net6.0-windows\AutoGUI.dll" target="lib\net6.0-windows7.0\AutoGUI.dll" />
+    <file src="C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Release\net6.0-windows\AutoGUI.xml" target="lib\net6.0-windows7.0\AutoGUI.xml" />
+  </files>
+</package>

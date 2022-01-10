@@ -1,0 +1,13 @@
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0-windows\AutoGUI.deps.json
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0-windows\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0-windows\ref\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0-windows\AutoGUI.pdb
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0-windows\AutoGUI.xml
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.AssemblyInfoInputs.cache
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.AssemblyInfo.cs
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.csproj.CoreCompileInputs.cache
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\ref\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.xml
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0-windows\AutoGUI.pdb

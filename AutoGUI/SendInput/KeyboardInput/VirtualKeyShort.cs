@@ -1,5 +1,8 @@
 ﻿namespace AutoGUI
 {
+    /// <summary>
+    /// Keys
+    /// </summary>
     public enum VirtualKeyShort : short
     {
         ///<summary>

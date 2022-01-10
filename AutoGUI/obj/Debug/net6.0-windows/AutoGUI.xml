@@ -1,0 +1,968 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AutoGUI</name>
+    </assembly>
+    <members>
+        <member name="T:AutoGUI.Cursor">
+            <summary>
+            Manages your cursor
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Cursor.SetPos(System.Int32,System.Int32)">
+            <summary>
+            Sets the specified absolute position
+            </summary>
+            <param name="x">Position on X axis</param>
+            <param name="y">Position on Y axis</param>
+        </member>
+        <member name="M:AutoGUI.Cursor.GetPos">
+            <summary>
+            Gets the absolute position
+            </summary>
+            <returns>X and Y axis</returns>
+        </member>
+        <member name="M:AutoGUI.Cursor.LeftClick">
+            <summary>
+            Simple left click
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Cursor.RightClick">
+            <summary>
+            Simple right click
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Cursor.LeftClickDown">
+            <summary>
+            Maintains left click pressed indefinitely
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Cursor.LeftClickUp">
+            <summary>
+            Releases left click if it is being pressed
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Cursor.RightClickDown">
+            <summary>
+            Maintains right click pressed indefinitely
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Cursor.RightClickUp">
+            <summary>
+            Releases right click if it is being pressed
+            </summary>
+        </member>
+        <member name="T:AutoGUI.Keyboard">
+            <summary>
+            Manages your keyboard
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Keyboard.Set(AutoGUI.VirtualKeyShort)">
+            <summary>
+            Sets a specified key / Simulates to touch a specified key
+            </summary>
+            <param name="key">Key to set</param>
+        </member>
+        <member name="M:AutoGUI.Keyboard.Set(System.Char)">
+            <summary>
+            Set a specified Unicode char / Simulates to print a specified Unicode char
+            </summary>
+            <param name="c">Char to set / Char to print</param>
+        </member>
+        <member name="M:AutoGUI.Keyboard.Set(System.String)">
+            <summary>
+            Sets a specified Unicode string / Simulates to print a specified Unicode string
+            </summary>
+            <param name="msg">String to set / String to print</param>
+        </member>
+        <member name="T:AutoGUI.VirtualKeyShort">
+            <summary>
+            Keys
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LBUTTON">
+            <summary>
+            Left mouse button
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RBUTTON">
+            <summary>
+            Right mouse button
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.CANCEL">
+            <summary>
+            Control-break processing
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MBUTTON">
+            <summary>
+            Middle mouse button (three-button mouse)
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.XBUTTON1">
+            <summary>
+            Windows 2000/XP: X1 mouse button
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.XBUTTON2">
+            <summary>
+            Windows 2000/XP: X2 mouse button
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BACK">
+            <summary>
+            BACKSPACE key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.TAB">
+            <summary>
+            TAB key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.CLEAR">
+            <summary>
+            CLEAR key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RETURN">
+            <summary>
+            ENTER key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SHIFT">
+            <summary>
+            SHIFT key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.CONTROL">
+            <summary>
+            CTRL key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MENU">
+            <summary>
+            ALT key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PAUSE">
+            <summary>
+            PAUSE key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.CAPITAL">
+            <summary>
+            CAPS LOCK key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KANA">
+            <summary>
+            Input Method Editor (IME) Kana mode
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.HANGUL">
+            <summary>
+            IME Hangul mode
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.JUNJA">
+            <summary>
+            IME Junja mode
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.FINAL">
+            <summary>
+            IME final mode
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.HANJA">
+            <summary>
+            IME Hanja mode
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KANJI">
+            <summary>
+            IME Kanji mode
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.ESCAPE">
+            <summary>
+            ESC key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.CONVERT">
+            <summary>
+            IME convert
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NONCONVERT">
+            <summary>
+            IME nonconvert
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.ACCEPT">
+            <summary>
+            IME accept
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MODECHANGE">
+            <summary>
+            IME mode change request
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SPACE">
+            <summary>
+            SPACEBAR
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PRIOR">
+            <summary>
+            PAGE UP key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NEXT">
+            <summary>
+            PAGE DOWN key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.END">
+            <summary>
+            END key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.HOME">
+            <summary>
+            HOME key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LEFT">
+            <summary>
+            LEFT ARROW key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.UP">
+            <summary>
+            UP ARROW key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RIGHT">
+            <summary>
+            RIGHT ARROW key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.DOWN">
+            <summary>
+            DOWN ARROW key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SELECT">
+            <summary>
+            SELECT key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PRINT">
+            <summary>
+            PRINT key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.EXECUTE">
+            <summary>
+            EXECUTE key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SNAPSHOT">
+            <summary>
+            PRINT SCREEN key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.INSERT">
+            <summary>
+            INS key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.DELETE">
+            <summary>
+            DEL key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.HELP">
+            <summary>
+            HELP key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_0">
+            <summary>
+            0 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_1">
+            <summary>
+            1 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_2">
+            <summary>
+            2 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_3">
+            <summary>
+            3 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_4">
+            <summary>
+            4 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_5">
+            <summary>
+            5 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_6">
+            <summary>
+            6 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_7">
+            <summary>
+            7 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_8">
+            <summary>
+            8 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_9">
+            <summary>
+            9 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_A">
+            <summary>
+            A key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_B">
+            <summary>
+            B key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_C">
+            <summary>
+            C key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_D">
+            <summary>
+            D key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_E">
+            <summary>
+            E key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_F">
+            <summary>
+            F key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_G">
+            <summary>
+            G key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_H">
+            <summary>
+            H key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_I">
+            <summary>
+            I key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_J">
+            <summary>
+            J key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_K">
+            <summary>
+            K key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_L">
+            <summary>
+            L key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_M">
+            <summary>
+            M key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_N">
+            <summary>
+            N key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_O">
+            <summary>
+            O key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_P">
+            <summary>
+            P key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_Q">
+            <summary>
+            Q key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_R">
+            <summary>
+            R key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_S">
+            <summary>
+            S key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_T">
+            <summary>
+            T key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_U">
+            <summary>
+            U key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_V">
+            <summary>
+            V key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_W">
+            <summary>
+            W key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_X">
+            <summary>
+            X key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_Y">
+            <summary>
+            Y key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.KEY_Z">
+            <summary>
+            Z key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LWIN">
+            <summary>
+            Left Windows key (Microsoft Natural keyboard)
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RWIN">
+            <summary>
+            Right Windows key (Natural keyboard)
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.APPS">
+            <summary>
+            Applications key (Natural keyboard)
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SLEEP">
+            <summary>
+            Computer Sleep key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD0">
+            <summary>
+            Numeric keypad 0 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD1">
+            <summary>
+            Numeric keypad 1 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD2">
+            <summary>
+            Numeric keypad 2 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD3">
+            <summary>
+            Numeric keypad 3 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD4">
+            <summary>
+            Numeric keypad 4 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD5">
+            <summary>
+            Numeric keypad 5 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD6">
+            <summary>
+            Numeric keypad 6 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD7">
+            <summary>
+            Numeric keypad 7 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD8">
+            <summary>
+            Numeric keypad 8 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMPAD9">
+            <summary>
+            Numeric keypad 9 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MULTIPLY">
+            <summary>
+            Multiply key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.ADD">
+            <summary>
+            Add key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SEPARATOR">
+            <summary>
+            Separator key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SUBTRACT">
+            <summary>
+            Subtract key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.DECIMAL">
+            <summary>
+            Decimal key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.DIVIDE">
+            <summary>
+            Divide key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F1">
+            <summary>
+            F1 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F2">
+            <summary>
+            F2 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F3">
+            <summary>
+            F3 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F4">
+            <summary>
+            F4 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F5">
+            <summary>
+            F5 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F6">
+            <summary>
+            F6 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F7">
+            <summary>
+            F7 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F8">
+            <summary>
+            F8 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F9">
+            <summary>
+            F9 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F10">
+            <summary>
+            F10 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F11">
+            <summary>
+            F11 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F12">
+            <summary>
+            F12 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F13">
+            <summary>
+            F13 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F14">
+            <summary>
+            F14 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F15">
+            <summary>
+            F15 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F16">
+            <summary>
+            F16 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F17">
+            <summary>
+            F17 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F18">
+            <summary>
+            F18 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F19">
+            <summary>
+            F19 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F20">
+            <summary>
+            F20 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F21">
+            <summary>
+            F21 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F22">
+            <summary>
+            F22 key, (PPC only) Key used to lock device.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F23">
+            <summary>
+            F23 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.F24">
+            <summary>
+            F24 key  
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NUMLOCK">
+            <summary>
+            NUM LOCK key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.SCROLL">
+            <summary>
+            SCROLL LOCK key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LSHIFT">
+            <summary>
+            Left SHIFT key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RSHIFT">
+            <summary>
+            Right SHIFT key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LCONTROL">
+            <summary>
+            Left CONTROL key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RCONTROL">
+            <summary>
+            Right CONTROL key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LMENU">
+            <summary>
+            Left MENU key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.RMENU">
+            <summary>
+            Right MENU key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_BACK">
+            <summary>
+            Windows 2000/XP: Browser Back key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_FORWARD">
+            <summary>
+            Windows 2000/XP: Browser Forward key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_REFRESH">
+            <summary>
+            Windows 2000/XP: Browser Refresh key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_STOP">
+            <summary>
+            Windows 2000/XP: Browser Stop key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_SEARCH">
+            <summary>
+            Windows 2000/XP: Browser Search key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_FAVORITES">
+            <summary>
+            Windows 2000/XP: Browser Favorites key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.BROWSER_HOME">
+            <summary>
+            Windows 2000/XP: Browser Start and Home key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.VOLUME_MUTE">
+            <summary>
+            Windows 2000/XP: Volume Mute key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.VOLUME_DOWN">
+            <summary>
+            Windows 2000/XP: Volume Down key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.VOLUME_UP">
+            <summary>
+            Windows 2000/XP: Volume Up key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MEDIA_NEXT_TRACK">
+            <summary>
+            Windows 2000/XP: Next Track key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MEDIA_PREV_TRACK">
+            <summary>
+            Windows 2000/XP: Previous Track key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MEDIA_STOP">
+            <summary>
+            Windows 2000/XP: Stop Media key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.MEDIA_PLAY_PAUSE">
+            <summary>
+            Windows 2000/XP: Play/Pause Media key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LAUNCH_MAIL">
+            <summary>
+            Windows 2000/XP: Start Mail key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LAUNCH_MEDIA_SELECT">
+            <summary>
+            Windows 2000/XP: Select Media key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LAUNCH_APP1">
+            <summary>
+            Windows 2000/XP: Start Application 1 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.LAUNCH_APP2">
+            <summary>
+            Windows 2000/XP: Start Application 2 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_1">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_PLUS">
+            <summary>
+            Windows 2000/XP: For any country/region, the '+' key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_COMMA">
+            <summary>
+            Windows 2000/XP: For any country/region, the ',' key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_MINUS">
+            <summary>
+            Windows 2000/XP: For any country/region, the '-' key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_PERIOD">
+            <summary>
+            Windows 2000/XP: For any country/region, the '.' key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_2">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_3">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_4">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_5">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_6">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_7">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_8">
+            <summary>
+            Used for miscellaneous characters; it can vary by keyboard.
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_102">
+            <summary>
+            Windows 2000/XP: Either the angle bracket key or the backslash key on the RT 102-key keyboard
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PROCESSKEY">
+            <summary>
+            Windows 95/98/Me, Windows NT 4.0, Windows 2000/XP: IME PROCESS key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PACKET">
+            <summary>
+            Windows 2000/XP: Used to pass Unicode characters as if they were keystrokes.
+            The VK_PACKET key is the low word of a 32-bit Virtual Key value used for non-keyboard input methods. For more information,
+            see Remark in KEYBDINPUT, SendInput, WM_KEYDOWN, and WM_KEYUP
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.ATTN">
+            <summary>
+            Attn key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.CRSEL">
+            <summary>
+            CrSel key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.EXSEL">
+            <summary>
+            ExSel key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.EREOF">
+            <summary>
+            Erase EOF key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PLAY">
+            <summary>
+            Play key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.ZOOM">
+            <summary>
+            Zoom key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.NONAME">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.PA1">
+            <summary>
+            PA1 key
+            </summary>
+        </member>
+        <member name="F:AutoGUI.VirtualKeyShort.OEM_CLEAR">
+            <summary>
+            Clear key
+            </summary>
+        </member>
+        <member name="T:AutoGUI.Point">
+            <summary>
+            Defines the X and Y axis of a point
+            </summary>
+        </member>
+        <member name="M:AutoGUI.Point.#ctor(System.Int32,System.Int32)">
+            <summary>
+            Sets X and Y axis of a point
+            </summary>
+            <param name="x">X axis</param>
+            <param name="y">Y axis</param>
+        </member>
+        <member name="F:AutoGUI.Point.X">
+            <summary>
+            X axis
+            </summary>
+        </member>
+        <member name="F:AutoGUI.Point.Y">
+            <summary>
+            Y axis
+            </summary>
+        </member>
+    </members>
+</doc>
