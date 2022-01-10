@@ -1,0 +1,11 @@
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0\AutoGUI.deps.json
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0\ref\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Debug\net6.0\AutoGUI.pdb
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\AutoGUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\AutoGUI.AssemblyInfoInputs.cache
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\AutoGUI.AssemblyInfo.cs
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\AutoGUI.csproj.CoreCompileInputs.cache
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\ref\AutoGUI.dll
+C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\obj\Debug\net6.0\AutoGUI.pdb
