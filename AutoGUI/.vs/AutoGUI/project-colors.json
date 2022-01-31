@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "00e37cb7-1086-437a-8f65-408ff9773cfa": {
+      "ProjectGuid": "00e37cb7-1086-437a-8f65-408ff9773cfa",
+      "DisplayName": "AutoGUI",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
