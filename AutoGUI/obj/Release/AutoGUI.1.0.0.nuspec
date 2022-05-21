@@ -3,8 +3,14 @@
   <metadata>
     <id>AutoGUI</id>
     <version>1.0.0</version>
-    <authors>AutoGUI</authors>
-    <description>Package Description</description>
+    <title>AutoGUI</title>
+    <authors>Julian Fajardo</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>Picsart_22-05-20_22-26-56-967 (1) (1).png</icon>
+    <description>(Only windows) Set keys or Unicode characters automatically by using Keyboard class. Set or get cursor position and do clicks automatically by using Cursor class</description>
+    <tags>Cursor Keyboard Automation</tags>
+    <repository type="git" url="https://github.com/julienf04/AutoGUI" />
     <dependencies>
       <group targetFramework="net6.0-windows7.0" />
     </dependencies>
@@ -12,5 +18,6 @@
   <files>
     <file src="C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Release\net6.0-windows\AutoGUI.dll" target="lib\net6.0-windows7.0\AutoGUI.dll" />
     <file src="C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\bin\Release\net6.0-windows\AutoGUI.xml" target="lib\net6.0-windows7.0\AutoGUI.xml" />
+    <file src="C:\Users\julie\Downloads\Picsart_22-05-20_22-26-56-967 (1) (1).png" target="\Picsart_22-05-20_22-26-56-967 (1) (1).png" />
   </files>
 </package>

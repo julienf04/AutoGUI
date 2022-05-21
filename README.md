@@ -3,4 +3,4 @@
 
 It uses WINAPI to control cursor and keyboard input.
 
-You can see an example code in file "Example_Program.cs".
+You can see an example code in file "AutoGUI_Example.cs".
