@@ -964,5 +964,11 @@
             Y axis
             </summary>
         </member>
+        <member name="M:AutoGUI.Point.ToString">
+            <summary>
+            Returns string representation of Point structure
+            </summary>
+            <returns>X=[X value], Y=[Y value]</returns>
+        </member>
     </members>
 </doc>

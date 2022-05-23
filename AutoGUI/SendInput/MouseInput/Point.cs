@@ -31,5 +31,14 @@ namespace AutoGUI
         /// Y axis
         /// </summary>
         public int Y;
+
+        /// <summary>
+        /// Returns string representation of Point structure
+        /// </summary>
+        /// <returns>X=[X value], Y=[Y value]</returns>
+        public override string ToString()
+        {
+            return "X=" + X + "Y=" + Y;
+        }
     }
 }

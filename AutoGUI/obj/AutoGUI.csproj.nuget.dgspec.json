@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\julie\\C# Proyetos\\AutoGUI\\AutoGUI\\AutoGUI.csproj": {}
+    "C:\\Users\\julie\\C# Proyetos\\AutoGUI 1.0.1\\AutoGUI\\AutoGUI\\AutoGUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\julie\\C# Proyetos\\AutoGUI\\AutoGUI\\AutoGUI.csproj": {
+    "C:\\Users\\julie\\C# Proyetos\\AutoGUI 1.0.1\\AutoGUI\\AutoGUI\\AutoGUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\julie\\C# Proyetos\\AutoGUI\\AutoGUI\\AutoGUI.csproj",
+        "projectUniqueName": "C:\\Users\\julie\\C# Proyetos\\AutoGUI 1.0.1\\AutoGUI\\AutoGUI\\AutoGUI.csproj",
         "projectName": "AutoGUI",
-        "projectPath": "C:\\Users\\julie\\C# Proyetos\\AutoGUI\\AutoGUI\\AutoGUI.csproj",
+        "projectPath": "C:\\Users\\julie\\C# Proyetos\\AutoGUI 1.0.1\\AutoGUI\\AutoGUI\\AutoGUI.csproj",
         "packagesPath": "C:\\Users\\julie\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\julie\\C# Proyetos\\AutoGUI\\AutoGUI\\obj\\",
+        "outputPath": "C:\\Users\\julie\\C# Proyetos\\AutoGUI 1.0.1\\AutoGUI\\AutoGUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
