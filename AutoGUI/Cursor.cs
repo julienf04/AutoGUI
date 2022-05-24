@@ -13,6 +13,21 @@ namespace AutoGUI
         [DllImport("User32")] private static extern bool GetCursorPos(out Point p);
 
         /// <summary>
+        /// INPUT instance
+        /// </summary>
+        private static INPUT[] _input = new INPUT[1]
+        {
+             new INPUT()
+             {
+                type = E_InputEvents.InputMouse,
+                U = new InputUnion()
+                {
+                    mi = new MOUSEINPUT()
+                }
+             }
+        };
+
+        /// <summary>
         /// Sets the specified absolute position
         /// </summary>
         /// <param name="x">Position on X axis</param>
@@ -30,21 +45,12 @@ namespace AutoGUI
             return p;
         }
 
-        private static void _Click(E_MouseEvents mouseEvent)
+        private static void _CursorEvent(E_MouseEvents mouseEvent, int mouseData = 0)
         {
-            INPUT input = new INPUT()
-            {
-                type = E_InputEvents.InputMouse,
-                U = new InputUnion()
-                {
-                    mi = new MOUSEINPUT()
-                    {
-                        dwFlags = mouseEvent
-                    }
-                }
-            };
+            _input[0].U.mi.dwFlags = mouseEvent;
+            _input[0].U.mi.mouseData = mouseData;
 
-            LowLevelSendInput.SendInput(1, input, INPUT.Size);
+            LowLevelSendInput.SendInput(_input.Length, _input, INPUT.Size);
         }
 
         /// <summary>
@@ -52,8 +58,8 @@ namespace AutoGUI
         /// </summary>
         public static void LeftClick()
         {
-            _Click(E_MouseEvents.LEFTDOWN);
-            _Click(E_MouseEvents.LEFTUP);
+            LeftClickDown();
+            LeftClickUp();
         }
 
         /// <summary>
@@ -61,29 +67,41 @@ namespace AutoGUI
         /// </summary>
         public static void RightClick()
         {
-            _Click(E_MouseEvents.RIGHTDOWN);
-            _Click(E_MouseEvents.RIGHTUP);
+            RightClickDown();
+            RightClickUp();
         }
 
         /// <summary>
         /// Maintains left click pressed indefinitely
         /// </summary>
-        public static void LeftClickDown() => _Click(E_MouseEvents.LEFTDOWN);
+        public static void LeftClickDown() => _CursorEvent(E_MouseEvents.LEFTDOWN);
 
         /// <summary>
         /// Releases left click if it is being pressed
         /// </summary>
-        public static void LeftClickUp() => _Click(E_MouseEvents.LEFTUP);
+        public static void LeftClickUp() => _CursorEvent(E_MouseEvents.LEFTUP);
 
         /// <summary>
         /// Maintains right click pressed indefinitely
         /// </summary>
-        public static void RightClickDown() => _Click(E_MouseEvents.RIGHTDOWN);
+        public static void RightClickDown() => _CursorEvent(E_MouseEvents.RIGHTDOWN);
 
         /// <summary>
         /// Releases right click if it is being pressed
         /// </summary>
-        public static void RightClickUp() => _Click(E_MouseEvents.RIGHTUP);
+        public static void RightClickUp() => _CursorEvent(E_MouseEvents.RIGHTUP);
+
+        /// <summary>
+        /// Moves the vertical wheel of the mouse
+        /// </summary>
+        /// <param name="intensity">Amount of movement</param>
+        public static void VerticalWheel(int intensity) => _CursorEvent(E_MouseEvents.WHEEL, intensity);
+
+        /// <summary>
+        /// Moves the horizontal wheel of the mouse
+        /// </summary>
+        /// <param name="intensity">Amount of movement</param>
+        public static void HorizontalWheel(int intensity) => _CursorEvent(E_MouseEvents.HWHEEL, intensity);
 
     }
 }

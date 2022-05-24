@@ -16,11 +16,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyDescriptionAttribute("(Only windows) Set keys or Unicode characters automatically by using Keyboard cla" +
     "ss. Set or get cursor position and do clicks automatically by using Cursor class" +
     "")]
-[assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.1.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.1")]
+[assembly: System.Reflection.AssemblyFileVersionAttribute("1.1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.1.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoGUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoGUI")]
-[assembly: System.Reflection.AssemblyVersionAttribute("1.0.1.0")]
+[assembly: System.Reflection.AssemblyVersionAttribute("1.1.0.0")]
 [assembly: System.Reflection.AssemblyMetadataAttribute("RepositoryUrl", "https://github.com/julienf04/AutoGUI")]
 [assembly: System.Resources.NeutralResourcesLanguageAttribute("en")]
 [assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]

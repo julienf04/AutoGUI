@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AutoGUI</id>
+    <version>1.1.0</version>
+    <title>AutoGUI</title>
+    <authors>Julian Fajardo</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>AutoGUI_Icon.png</icon>
+    <readme>README.md</readme>
+    <description>(Only windows) Set keys or Unicode characters automatically by using Keyboard class. Set or get cursor position and do clicks automatically by using Cursor class</description>
+    <tags>Cursor Keyboard Automation</tags>
+    <repository type="git" url="https://github.com/julienf04/AutoGUI" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Users\julie\C# Proyetos\AutoGUI 1.0.1\AutoGUI\AutoGUI\bin\Release\net6.0-windows\AutoGUI.dll" target="lib\net6.0-windows7.0\AutoGUI.dll" />
+    <file src="C:\Users\julie\C# Proyetos\AutoGUI 1.0.1\AutoGUI\AutoGUI\bin\Release\net6.0-windows\AutoGUI.xml" target="lib\net6.0-windows7.0\AutoGUI.xml" />
+    <file src="C:\Users\julie\C# Proyetos\AutoGUI 1.0.1\AutoGUI\AutoGUI\AutoGUI_Icon.png" target="\AutoGUI_Icon.png" />
+    <file src="C:\Users\julie\C# Proyetos\AutoGUI 1.0.1\AutoGUI\README.md" target="\README.md" />
+  </files>
+</package>

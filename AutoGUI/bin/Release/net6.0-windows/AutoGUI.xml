@@ -9,6 +9,11 @@
             Manages your cursor
             </summary>
         </member>
+        <member name="F:AutoGUI.Cursor._input">
+            <summary>
+            INPUT instance
+            </summary>
+        </member>
         <member name="M:AutoGUI.Cursor.SetPos(System.Int32,System.Int32)">
             <summary>
             Sets the specified absolute position
@@ -52,9 +57,26 @@
             Releases right click if it is being pressed
             </summary>
         </member>
+        <member name="M:AutoGUI.Cursor.VerticalWheel(System.Int32)">
+            <summary>
+            Moves the vertical wheel of the mouse
+            </summary>
+            <param name="intensity">Amount of movement</param>
+        </member>
+        <member name="M:AutoGUI.Cursor.HorizontalWheel(System.Int32)">
+            <summary>
+            Moves the horizontal wheel of the mouse
+            </summary>
+            <param name="intensity">Amount of movement</param>
+        </member>
         <member name="T:AutoGUI.Keyboard">
             <summary>
             Manages your keyboard
+            </summary>
+        </member>
+        <member name="F:AutoGUI.Keyboard._input">
+            <summary>
+            INPUT instance
             </summary>
         </member>
         <member name="M:AutoGUI.Keyboard.Set(AutoGUI.VirtualKeyShort)">

@@ -9,24 +9,31 @@ namespace AutoGUI
     public static class Keyboard
     {
         /// <summary>
-        /// Sets a specified key / Simulates to touch a specified key
+        /// INPUT instance
         /// </summary>
-        /// <param name="key">Key to set</param>
-        public static void Set(VirtualKeyShort key)
+        private static INPUT[] _input = new INPUT[1]
         {
-            INPUT input = new INPUT()
+            new INPUT()
             {
                 type = E_InputEvents.InputKeyboard,
                 U = new InputUnion()
                 {
                     ki = new KEYBDINPUT()
-                    {
-                        wVk = key
-                    }
                 }
-            };
+            }
+        };
 
-            LowLevelSendInput.SendInput(1, input, INPUT.Size);
+        /// <summary>
+        /// Sets a specified key / Simulates to touch a specified key
+        /// </summary>
+        /// <param name="key">Key to set</param>
+        public static void Set(VirtualKeyShort key)
+        {
+            _input[0].U.ki.dwFlags = 0;
+            _input[0].U.ki.wScan = 0;
+            _input[0].U.ki.wVk = key;
+
+            LowLevelSendInput.SendInput(1, _input, INPUT.Size);
         }
 
         /// <summary>
@@ -35,21 +42,11 @@ namespace AutoGUI
         /// <param name="c">Char to set / Char to print</param>
         public static void Set(char c)
         {
-            INPUT input = new INPUT()
-            {
-                type = E_InputEvents.InputKeyboard,
-                U = new InputUnion()
-                {
-                    ki = new KEYBDINPUT()
-                    {
-                        dwFlags = KEYEVENTF.UNICODE,
-                        wVk = 0,
-                        wScan = (ScanCodeShort)c
-                    }
-                }
-            };
+            _input[0].U.ki.dwFlags = KEYEVENTF.UNICODE;
+            _input[0].U.ki.wVk = 0;
+            _input[0].U.ki.wScan = (ScanCodeShort)c;
 
-            LowLevelSendInput.SendInput(1, input, INPUT.Size);
+            LowLevelSendInput.SendInput(1, _input, INPUT.Size);
         }
 
         /// <summary>
