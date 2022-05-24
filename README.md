@@ -8,6 +8,10 @@ It uses WINAPI to control cursor and keyboard input.
 // Import AutoGUI library
 using AutoGUI;
 
+// Get the current position of the cursor and print its values
+Point p = Cursor.GetPos();
+System.Console.WriteLine(p); // Output: X=[X value], Y=[Y value]
+
 // Move the cursor at the position X=100 Y=100 and click on it
 Cursor.SetPos(100, 850);
 Cursor.LeftClick();
