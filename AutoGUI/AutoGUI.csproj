@@ -13,13 +13,28 @@
     <Authors>Julian Fajardo</Authors>
     <Description>(Only windows) Set keys or Unicode characters automatically by using Keyboard class. Set or get cursor position and do clicks automatically by using Cursor class</Description>
     <PackageTags>Cursor Keyboard Automation</PackageTags>
-    <PackageIcon>C:\Users\julie\C# Proyetos\AutoGUI\AutoGUI\AutoGUI_Icon.png</PackageIcon>
+    <PackageIcon>AutoGUI_Icon.png</PackageIcon>
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageId>AutoGUI</PackageId>
     <Version>1.0.0</Version>
     <Company>Julian Fajardo</Company>
     <Product>AutoGUI</Product>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="AutoGUI_Icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>

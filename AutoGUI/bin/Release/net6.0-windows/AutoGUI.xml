@@ -966,7 +966,7 @@
         </member>
         <member name="M:AutoGUI.Point.ToString">
             <summary>
-            Returns string representation of Point structure
+            Returns the representation of Point structure as a string
             </summary>
             <returns>X=[X value], Y=[Y value]</returns>
         </member>

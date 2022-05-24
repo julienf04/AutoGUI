@@ -33,12 +33,12 @@ namespace AutoGUI
         public int Y;
 
         /// <summary>
-        /// Returns string representation of Point structure
+        /// Returns the representation of Point structure as a string
         /// </summary>
         /// <returns>X=[X value], Y=[Y value]</returns>
         public override string ToString()
         {
-            return "X=" + X + "Y=" + Y;
+            return "X=" + X + ", Y=" + Y;
         }
     }
 }
