@@ -23,3 +23,7 @@ Keyboard.Set("Hello world!");
 # Previous requirements
 - NET 5 or later versions
 - Windows 7 or later versions
+
+# Contact me
+- Instagram: [https://www.instagram.com/julienf_04/](https://www.instagram.com/julienf_04/ "https://www.instagram.com/julienf_04/")
+- Gmail: julian.fajardo000@gmail.com
