@@ -1,6 +1,6 @@
 ﻿namespace AutoGUI.SendInput
 {
-    internal enum E_InputEvents
+    internal enum InputEvent
     {
         InputMouse = 0,
         InputKeyboard = 1,

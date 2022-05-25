@@ -1,7 +1,7 @@
 ﻿namespace AutoGUI.SendInput.MouseInput
 {
     [Flags]
-    internal enum E_MouseEvents : uint
+    internal enum MouseEvents : uint
     {
         ABSOLUTE = 0x8000,
         HWHEEL = 0x01000,

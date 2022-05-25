@@ -19,7 +19,7 @@ namespace AutoGUI
         {
              new INPUT()
              {
-                type = E_InputEvents.InputMouse,
+                type = InputEvent.InputMouse,
                 U = new InputUnion()
                 {
                     mi = new MOUSEINPUT()
@@ -45,7 +45,7 @@ namespace AutoGUI
             return p;
         }
 
-        private static void _CursorEvent(E_MouseEvents mouseEvent, int mouseData = 0)
+        private static void _CursorEvent(MouseEvents mouseEvent, int mouseData = 0)
         {
             _input[0].U.mi.dwFlags = mouseEvent;
             _input[0].U.mi.mouseData = mouseData;
@@ -74,34 +74,34 @@ namespace AutoGUI
         /// <summary>
         /// Maintains left click pressed indefinitely
         /// </summary>
-        public static void LeftClickDown() => _CursorEvent(E_MouseEvents.LEFTDOWN);
+        public static void LeftClickDown() => _CursorEvent(MouseEvents.LEFTDOWN);
 
         /// <summary>
         /// Releases left click if it is being pressed
         /// </summary>
-        public static void LeftClickUp() => _CursorEvent(E_MouseEvents.LEFTUP);
+        public static void LeftClickUp() => _CursorEvent(MouseEvents.LEFTUP);
 
         /// <summary>
         /// Maintains right click pressed indefinitely
         /// </summary>
-        public static void RightClickDown() => _CursorEvent(E_MouseEvents.RIGHTDOWN);
+        public static void RightClickDown() => _CursorEvent(MouseEvents.RIGHTDOWN);
 
         /// <summary>
         /// Releases right click if it is being pressed
         /// </summary>
-        public static void RightClickUp() => _CursorEvent(E_MouseEvents.RIGHTUP);
+        public static void RightClickUp() => _CursorEvent(MouseEvents.RIGHTUP);
 
         /// <summary>
         /// Moves the vertical wheel of the mouse
         /// </summary>
         /// <param name="intensity">Amount of movement</param>
-        public static void VerticalWheel(int intensity) => _CursorEvent(E_MouseEvents.WHEEL, intensity);
+        public static void VerticalWheel(int intensity) => _CursorEvent(MouseEvents.WHEEL, intensity);
 
         /// <summary>
         /// Moves the horizontal wheel of the mouse
         /// </summary>
         /// <param name="intensity">Amount of movement</param>
-        public static void HorizontalWheel(int intensity) => _CursorEvent(E_MouseEvents.HWHEEL, intensity);
+        public static void HorizontalWheel(int intensity) => _CursorEvent(MouseEvents.HWHEEL, intensity);
 
     }
 }

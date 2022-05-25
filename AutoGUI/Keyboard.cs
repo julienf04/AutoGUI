@@ -15,7 +15,7 @@ namespace AutoGUI
         {
             new INPUT()
             {
-                type = E_InputEvents.InputKeyboard,
+                type = InputEvent.InputKeyboard,
                 U = new InputUnion()
                 {
                     ki = new KEYBDINPUT()

@@ -8,7 +8,7 @@ namespace AutoGUI.SendInput.MouseInput
         internal int dx;
         internal int dy;
         internal int mouseData;
-        internal E_MouseEvents dwFlags;
+        internal MouseEvents dwFlags;
         internal uint time;
         internal UIntPtr dwExtraInfo;
     }
