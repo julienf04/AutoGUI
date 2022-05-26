@@ -17,7 +17,7 @@
     <RepositoryType>git</RepositoryType>
     <NeutralLanguage>en</NeutralLanguage>
     <PackageId>AutoGUI</PackageId>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Company>Julian Fajardo</Company>
     <Product>AutoGUI</Product>
     <PackageReadmeFile>README.md</PackageReadmeFile>

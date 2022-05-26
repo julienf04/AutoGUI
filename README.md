@@ -13,7 +13,7 @@ Point p = Cursor.GetPos();
 System.Console.WriteLine(p); // Output: X=[X value], Y=[Y value]
 
 // Move the cursor at the position X=100 Y=100 and click on it
-Cursor.SetPos(100, 850);
+Cursor.SetPos(100, 100);
 Cursor.LeftClick();
 
 // On any input field
@@ -21,8 +21,11 @@ Keyboard.Set("Hello world!");
 ```
 
 # Previous requirements
-- NET 5 or later versions
-- Windows 7 or later versions
+- **NET 5 or later versions**
+- **Windows 7 or later versions**
+
+If you are in Visual Studio you probably have to set this in your project:
+In your **project->Properties** you need to have **.NET 6 or later** in your **Target framework** , and you need to have **Windows 7.0 or later** in your **Target OS**
 
 # Contact me
 - Instagram: [https://www.instagram.com/julienf_04/](https://www.instagram.com/julienf_04/ "https://www.instagram.com/julienf_04/")
