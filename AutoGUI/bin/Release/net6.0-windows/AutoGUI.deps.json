@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "AutoGUI/1.1.0": {
+      "AutoGUI/1.2.0": {
         "runtime": {
           "AutoGUI.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "AutoGUI/1.1.0": {
+    "AutoGUI/1.2.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
